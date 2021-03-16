@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+
+
+<div class="row  max">
+    <div class="col-sm-12">
+        <div class="row per-area center-in-div">
+            <h1 class="">Personal Area</h1><br>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 side max">
+
+                <strong>Personal Information:</strong></br>
+                <strong>ID:</strong> {{online_user._id}}<br>
+                <strong>Name:</strong>{{online_user.name}}<br>
+                <strong>Age:</strong>{{online_user.age}} <br>
+                <strong>Email:</strong>{{online_user.email}}<br>
+
+                Picture Place
+
+            </div>
+
+            <div class="col-md-9 ">
+
+                <div class="row little-bit-padding buttons-place">
+
+                </div>
+
+                <div class="row little-bit-padding">
+                
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+  
+ 
+{%endblock%}

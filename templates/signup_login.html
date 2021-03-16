@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+
+<div class="row">
+        <div class="col-sm-4">
+
+        </div>
+
+        <div class="col-sm-4 whitebackgrounddiv center-in-div">
+            <h3 class="">
+                Sign Up
+            </h3><br><br>
+            <form method="post" action="signup" class="sign-up-form">
+                <input type="hidden" value="signup" name="type">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" class="form-control" name="name"></td>
+                    </tr>
+    
+                    <tr>
+                        <td>Age</td>
+                        <td><input type="number" class="form-control" name="age"></td>
+                    </tr>
+    
+                    <tr>
+                        <td>E-Mail</td>
+                        <td><input type="Mail" class="form-control email-su" name="email"></td>
+                    </tr>
+    
+    
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" class="form-control" name="password"></td>
+                    </tr>
+                    
+                    
+    
+                </tbody>
+                <small class="note"></small>
+            </table>
+          
+         </form>
+         <button type="button" class="float-right btn-primary sign-up">Go</button>
+        </div>
+        <div class="col-sm-4">
+
+        </div>
+       
+
+</div>
+
+
+<div class="row">
+    <div class="col-sm-4">
+
+    </div>
+
+    <div class="col-sm-4 whitebackgrounddiv center-in-div">
+        <h3 class="">
+            Log In
+        </h3><br><br>
+        <form method="post" action="login">
+            <input type="hidden" value="login" name="type">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+             
+                <tr>
+                    <td>E-Mail</td>
+                    <td><input type="Mail" class="form-control" name="email"></td>
+                </tr>
+
+
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" class="form-control" name="password"></td>
+                </tr>
+                
+        
+
+            </tbody>
+        </table>
+        <input type="submit" value="Submit" class="float-right btn-primary">
+     </form>
+    </div>
+    <div class="col-sm-4">
+
+    </div>
+   
+
+</div>
+
+{% endblock %}
